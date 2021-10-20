@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+             margin: 0;
+            background-color:rgb(87, 82, 128);
+            font-family: sans-serif;
+        }
+        nav {
+            background-color: red;
+            padding-top: 10px;
+            z-index: 5;
+            width: 100%;
+            height: 50px;
+            position: fixed;
+            text-align: right;
+        }
+        header a {
+
+            text-decoration: none;
+            padding: 26px;
+            font-family: sans-serif;
+            color: aliceblue;
+            font-size: 26px;
+        }
+        header a:hover {
+            background-color: rgb(84, 82, 128);
+        }
+        .about {
+            padding: 205px;
+            text-align: center;
+            width: auto;
+        }
+        .about h1 {
+            font-size: 45px;
+            color: aliceblue;
+        }
+        .about p {
+            font-style: italic;
+            color: rgb(216, 52, 84);
+            margin-top: -20px;
+            font-size: 24px;
+        }
+        .work div {
+            width: 250px;
+            height: 250px;
+            background-color: rgb(87, 87, 87);            
+            margin: 50px;
+            position: relative;
+        }
+        .work {
+            display: flex;
+            flex-wrap: wrap;
+            width: auto;
+            padding: 200px;
+
+        }
+        .work div span {
+            position: absolute;
+            width: 250px;
+            height: 25px;
+            text-align: center;
+            font-family: sans-serif;
+            color: aliceblue;
+            bottom: 0;
+            padding: 9px;
+        }
+        .work div img {
+            width: 250px;
+            height: 200px;
+            position: absolute;
+            top: 0;
+        }
+        footer span a img {
+            width: 100px;
+            height: 70px;
+        }
+    </style>
+    <title>About</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href=".about">About</a>
+            <a href=".work">Work</a>
+            <a href="">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section class="about">
+            <h1>Toktar Shyryn</h1>
+            <p>Let me introduce myself! My name is Shyryn. I am 17 years old. I come from Almaty. I am a second year student of IITU. I am enjoying the course a lot. I want to be a well-educated person, to develop myself and become the best daughter for my parents.</p>
+            <p>As for my interests I spend my free time helping my mother with housework and hiking in the countryside. I also devote 2 or 3 a week to the course English. I am not interested in watching TV. Now let me tell you a big about my family. It takes an important part in my life. My mother is a teacher and my father is a engineer. And I have siblings. They always support me and give me sound advice. I appreciate every minute of my life spent in the circle of my family.</p>
+        </section>
+        <section class="work">
+            <div>
+                <img src="Delphi_Language_Logo.png" alt="Wikipedia">
+                <span>Lab 1</span>
+            </div>
+            <div>
+                <img src="Снимок.JPG" alt="Surveyform">
+                <span>Lab 2</span>
+            </div>
+            <div>
+                <img src="Снимок3.JPG" alt="Parallax">
+                <span>Lab 3</span>
+            </div>
+            <div>
+                <img src="i.jpg" alt="Bitlab">
+                <span>Lab 4</span>
+            </div>
+            <div>
+                <img src="Er1FYWjXcAAKM2S.png" alt="Notion">
+                <span>Lab 5</span>
+            </div>
+            <div>
+                <img src="Dx7IqgfWwAAVMG.jpg" alt="W3school">
+                <span>Lab 6</span>
+            </div>
+        </section>
+        <section class="contact">
+            <h1>You can find me here</h1>
+        </section>
+    </main>
+    <footer>
+        <span>
+            <a href="https://vk.com/kntvna1"><img src="https://gregory-gost.ru/wp-content/uploads/2019/06/vk-logo.png" alt=""></a>
+        </span>
+        <span>
+            <a href="https://www.instagram.com/_kntvna__/"><img src="https://img2.freepng.ru/20180330/riw/kisspng-logo-desktop-wallpaper-computer-icons-clip-art-instagram-5abe0f44092f49.0439182815224051880376.jpg" alt=""></a>
+        </span>
+        <span>
+            <a href="https://www.notion.so/Toktar-Shyryn-IT1-2015-e95adadd45634bf89fcf4f7590517fde"><img src="https://cdn.worldvectorlogo.com/logos/notion-2.svg" alt=""></a>
+        </span>
+        <span>
+            <a href="https://newcampus.iitu.edu.kz/student_profile"><img src="data:image/jpeg;base64,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" alt=""></a>
+        </span>
+    </footer>
+</body>
+</html>
